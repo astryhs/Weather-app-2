@@ -45,11 +45,15 @@ main {
 
 /* Дополнительные стили*/
 #error-message {
+  background: rgba(255, 255, 255, 0.8);
   color: red;
-  font-size: 1.2rem;
-  margin-top: 5px;
+  font-size: 0.85rem;
+  padding: 4px 0px;
+  border-radius: 6px;
 }
-
+:root[data-theme="dark"] #error-message {
+  background: transparent;
+}
 @keyframes glow {
   0%,
   100% {
